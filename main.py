@@ -1,16 +1,14 @@
-# This is a sample Python script.
+from model.Board import Board
+from model import hello_world
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+board = Board(5, 3)
+print(board.rows, board.cols)
+print(board.grid[4][2])
 
+hello_world()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+b = [2 for i in range(10)]
+print(b)
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+c = [[i+j for i in range(3)] for j in range(3)]
+print(c)
